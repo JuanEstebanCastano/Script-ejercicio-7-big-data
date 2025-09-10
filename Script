@@ -12,3 +12,77 @@ JOIN public.productos p
 GROUP BY d.nombre, d.codigo_dane
 ORDER BY monto_total DESC
 LIMIT 8;
+
+/*punto 7.2*/
+SELECT 
+    m.nombre AS municipio,
+    SUM(v.cantidad) AS cantidad_total
+FROM vista_operaciones v
+JOIN public.municipios m
+    ON v.id_municipio = m.id_municipio
+JOIN public.departamentos d
+    ON v.id_departamento = d.id_departamento
+WHERE d.nombre = 'Antioquia'
+GROUP BY m.nombre
+ORDER BY cantidad_total DESC
+LIMIT 15;
+
+/*punto 7.3*/
+   SELECT 
+    d.nombre AS departamento,
+    SUM(v.cantidad) AS cantidad_total
+FROM vista_operaciones v
+JOIN public.departamentos d
+    ON v.id_departamento = d.id_departamento
+JOIN public.productos p
+    ON v.id_producto = p.id_producto
+WHERE p.nombre = 'MANZALOCA'
+GROUP BY d.nombre
+ORDER BY cantidad_total DESC
+LIMIT 5;
+
+/*punto 7.4*/
+SELECT 
+    d.nombre AS departamento,
+    m.nombre AS municipio,
+    SUM(v.cantidad * COALESCE(p.precio,0)) AS monto_total
+FROM vista_operaciones v
+JOIN public.municipios m
+    ON v.id_municipio = m.id_municipio
+JOIN public.departamentos d
+    ON v.id_departamento = d.id_departamento
+JOIN public.productos p
+    ON v.id_producto = p.id_producto
+WHERE v.cantidad > 0
+GROUP BY d.nombre, m.nombre
+ORDER BY monto_total ASC
+LIMIT 5
+
+/*punto 7.5*/
+
+SELECT 
+    COALESCE(r.nombre_region, 'SIN REGION') AS region,
+    p.nombre AS producto,
+    SUM(v.cantidad) AS cantidad_total
+FROM vista_operaciones v
+JOIN public.productos p
+    ON v.id_producto = p.id_producto
+JOIN public.departamentos d
+    ON v.id_departamento = d.id_departamento
+LEFT JOIN public.regiones r
+    ON d.codigo_region = r.id_region
+WHERE v.cantidad > 0
+GROUP BY r.nombre_region, p.nombre
+ORDER BY cantidad_total DESC;
+
+/*punto 7.6*/
+   p.nombre AS producto,
+    SUM(v.cantidad * p.precio) AS monto_total
+FROM vista_operaciones v
+JOIN public.productos p
+    ON v.id_producto = p.id_producto
+JOIN public.departamentos d
+    ON v.id_departamento = d.id_departamento
+WHERE d.nombre = 'Antioquia'
+GROUP BY p.nombre
+ORDER BY monto_total DESC;
