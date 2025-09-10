@@ -1,0 +1,14 @@
+/*punto 7.1*/
+
+SELECT 
+    d.nombre AS departamento,
+    d.codigo_dane AS codigo_dane,
+    SUM(v.cantidad * p.precio) AS monto_total
+FROM vista_operaciones v
+JOIN public.departamentos d
+    ON v.id_departamento = d.id_departamento
+JOIN public.productos p
+    ON v.id_producto = p.id_producto
+GROUP BY d.nombre, d.codigo_dane
+ORDER BY monto_total DESC
+LIMIT 8;
