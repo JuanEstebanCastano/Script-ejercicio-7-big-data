@@ -1,26 +1,32 @@
-## Maria Fernanda Gutiérrez Mira
-## SEBASTIAN ACEVEDO MOLINA
-## juan estebn castaño montoya 
+# Informe del Equipo de Trabajo y trabajo de ETL ELT 
 
-# Informe del Equipo de Trabajo
+## Integrantes Activos
+- **María Fernanda Gutiérrez Mira**
+- **Sebastián Acevedo Molina**
+- **Juan Esteban Castaño Montoya**
 
-De parte del equipo de trabajo, queremos manifestar que, de los cinco integrantes asignados, únicamente participamos activamente **tres**, ya que **dos compañeros nunca se pronunciaron**, a pesar de que se les realizó la respectiva comunicación tanto por **correo** como por **chat**.
+---
+
+## Contexto
+
+De los cinco integrantes asignados al grupo, únicamente participamos de manera activa **tres**.  
+Los otros dos compañeros no se pronunciaron ni mostraron disposición, a pesar de que se les contactó de forma reiterada tanto por **correo electrónico** como por **chat**.
 
 ---
 
 ## Desarrollo del trabajo
 
-Consideramos que el desarrollo de nuestro trabajo fue **ameno**.  
-Si bien al inicio resultó un poco complejo coordinarnos debido a los tiempos y la disponibilidad de cada uno, una vez logramos organizarnos, la colaboración fluyó con facilidad.
+El desarrollo del trabajo resultó en general **ameno y colaborativo**.  
+Al inicio, la coordinación presentó algunas dificultades debido a las diferencias de tiempos y disponibilidad; sin embargo, una vez logramos organizarnos, el trabajo en conjunto se volvió mucho más **fluido y eficiente**.
 
 ---
 
 ## Reconocimientos
 
-Destacamos especialmente la participación de:
+Queremos resaltar la participación y compromiso de:
 
-- **María Fernanda**
-- **Sebastián**
+- **María Fernanda Gutiérrez Mira**  
+- **Sebastián Acevedo Molina**
 
-Quienes demostraron en todo momento disposición para abordar cada uno de los puntos asignados.  
-Además, en los casos en que alguno presentó alguna dificultad, siempre ofrecieron su apoyo para avanzar en la actividad y, al mismo tiempo, propiciar un **aprendizaje conjunto** en el proceso.
+Ambos mostraron en todo momento una **actitud proactiva**, disposición para asumir cualquier punto del trabajo y apertura para apoyar a los demás integrantes en caso de que surgiera alguna dificultad.  
+Gracias a ello, el equipo no solo logró cumplir con las tareas asignadas, sino también generar un **proceso de aprendizaje compartido** que enriqueció la experiencia grupal.
