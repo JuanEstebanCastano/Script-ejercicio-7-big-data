@@ -1,7 +1,8 @@
 # Informe del Equipo de Trabajo y trabajo de ETL ELT 
 
 # Grupo G103 
-# Profesor: JAIME ERNESTO SOTO URDANETA
+# Profesor
+**JAIME ERNESTO SOTO URDANETA**
 
 ## Integrantes Activos
 - **María Fernanda Gutiérrez Mira**
