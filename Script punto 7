@@ -76,6 +76,7 @@ GROUP BY r.nombre_region, p.nombre
 ORDER BY cantidad_total DESC;
 
 /*punto 7.6*/
+SELECT 
    p.nombre AS producto,
     SUM(v.cantidad * p.precio) AS monto_total
 FROM vista_operaciones v
